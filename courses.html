@@ -13,6 +13,9 @@
   </script>
 </head>
 <style>
+  * {
+    box-sizing: border-box;
+  }
   body {
     background-image: url('Diktya_front_day.jpg');
     background-repeat: no-repeat;
@@ -20,6 +23,43 @@
     background-size: cover;
     font-family: verdana;
   }
+  header {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    margin-left: 240px;
+    font-size: 25px;
+  }
+  nav {
+    float: left;
+    width: 25%;
+    background-color: #ccc;
+    padding: 20px;
+    margin-left: 240px;
+  }
+  nav ul {
+    list-style-type: circle;
+    padding: 0;
+  }
+  article {
+    float: left;
+    padding: 20px;
+    width: 62%;
+    background-color: #f1f1f1;
+  }
+
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .menu {
     width: 200px;
     height: 100%;
@@ -44,7 +84,6 @@
   }
   .main {
     margin-top: 250px;
-    color: red;
   }
 
   table, th, td {
@@ -56,77 +95,85 @@
 </style>
 <body>
 <div class="menu">
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="courses.html" class="active">Courses</a>
   <a href="contact.html">Contact</a>
 </div>
-<h2>Schedule</h2>
-<table style="width:100%" class="main">
-  <tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  <tr>
-    <td>9:00-11:00</td>
-    <td>Texnologies Ekpaideyshs</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>11:00-13:00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>Texnologies Pagkosmioy Istoy</td>
-    <td>Analysh Kyklwmatwn I</td>
-  </tr>
-  <tr>
-    <td>12:00-14:00</td>
-    <td></td>
-    <td></td>
-    <td>Texnologies Ekpaideyshs</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>14:00-16:00</td>
-    <td></td>
-    <td>Texnologies Pagkosmioy Istoy</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>15:00-17:00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>Grafika H/Y // Analysh Kyklwmatwn I Lab</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>16:00-18:00</td>
-    <td></td>
-    <td>Grafika H/Y</td>
-    <td>Analysh Kyklwmatwn I</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>19:00-21:00</td>
-    <td></td>
-    <td>Sxediasmos Diadiktyakwn Prwtokollwn</td>
-    <td></td>
-    <td>Sxediasmos Diadiktyakwn Prwtokollwn</td>
-    <td></td>
-  </tr>
-</table>
 
+<div>
+  <header>
+    <h2>Courses I am currently attending</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li>Texnologies Pagkosmiou Istoy
+          <a href="https://eclass.uth.gr/courses/E-CE_U_188/">
+            <img src="eclass.png" alt="Course Page" style="width:30px;height:30px;margin-left:5px;">
+          </a>
+        </li>
+        <li>Grafika H/Y
+          <a href="https://eclass.uth.gr/courses/E-CE_U_197/">
+            <img src="eclass.png" alt="Course Page" style="width:30px;height:30px;margin-left:5px;">
+          </a>
+        </li>
+        <li>Analysh Kyklwmatwn I
+          <a href="https://courses.e-ce.uth.gr/CE230/">
+            <img src="uth.png" alt="Course Page" style="width:30px;height:30px;margin-left:5px;">
+          </a>
+        </li>
+        <li>Sxediasmos Diadiktyakwn Prwtokollwn
+          <a href="https://eclass.uth.gr/courses/E-CE_U_159/">
+            <img src="eclass.png" alt="Course Page" style="width:30px;height:30px;margin-left:5px;">
+          </a>
+        </li>
+        <li>Texnologies Ekpaideyshs
+          <a href="https://eclass.uth.gr/courses/E-CE_U_187/">
+            <img src="eclass.png" alt="Course Page" style="width:30px;height:30px;margin-left:5px;">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <article>
+      <table>
+        <tr>
+          <th>Course</th>
+          <th>Prerequisites</th>
+          <th>Schedule</th>
+          <th>Class</th>
+        </tr>
+        <tr>
+          <td>Texnologies Pagkosmiou Istoy</td>
+          <td>Programming I, Programming II</td>
+          <td>Tuesday 14:00-15:00, Thursday 11:00-13:00</td>
+          <td>Ergasthrio A3 Glavani, Aithousa G1 Glavani</td>
+        </tr>
+        <tr>
+          <td>Grafika H/Y</td>
+          <td>Grammikh Algebra, Programming I</td>
+          <td>Tuesday 16:00-18:00, Thursday 15:00-17:00</td>
+          <td>Aithousa I1 Matsaggou</td>
+        </tr>
+        <tr>
+          <td>Analysh Kyklwmatwn I</td>
+          <td>Grammikh Algebra, Fysikh II</td>
+          <td>Wednesday 16:00-18:00, Friday 11:00-13:00</td>
+          <td>Amphitheatro Xwrotaksias</td>
+        </tr>
+        <tr>
+          <td>Sxediasmos Diadiktyakwn Prwtokollwn</td>
+          <td>Diktya Ypologistwn I</td>
+          <td>Tuesday 19:00-21:00, Thursday 19:00-21:00</td>
+          <td>Aithousa G1 Glavani</td>
+        </tr>
+        <tr>
+          <td>Texnologies Ekpaideyshs</td>
+          <td>None</td>
+          <td>Monday 09:00-11:00, Wednesday 12:00-14:00</td>
+          <td>Aithousa I2 Matsaggou</td>
+        </tr>
+    </article>
+  </section>
+</div>
 </body>
 </html>
