@@ -13,9 +13,6 @@
   </script>
 </head>
 <style>
-  * {
-    box-sizing: border-box;
-  }
   body {
     background-image: url('Diktya_front_day.jpg');
     background-repeat: no-repeat;
@@ -31,8 +28,6 @@
     font-size: 25px;
   }
   nav {
-    float: left;
-    width: 25%;
     background-color: #ccc;
     padding: 20px;
     margin-left: 240px;
@@ -42,24 +37,10 @@
     padding: 0;
   }
   article {
-    float: left;
     padding: 20px;
-    width: 62%;
+    margin-left: 240px;
     background-color: #f1f1f1;
   }
-
-  section:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
-    }
-  }
-
   .menu {
     width: 200px;
     height: 100%;
@@ -82,16 +63,11 @@
     background-color: DarkSlateGray;
     color: white;
   }
-  .main {
-    margin-top: 250px;
-  }
-
   table, th, td {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 5px;
   }
-
 </style>
 <body>
 <div class="menu">
@@ -99,7 +75,6 @@
   <a href="courses.html" class="active">Courses</a>
   <a href="contact.html">Contact</a>
 </div>
-
 <div>
   <header>
     <h2>Courses I am currently attending</h2>
