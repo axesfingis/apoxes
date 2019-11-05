@@ -10,7 +10,7 @@
 <body>
 	<div class="main-div">
 		<h3>Provide the necessary info to register.</h3>
-		<form method="post" action="NewRegister">
+		<form method="post" action="TryLogin">
 			<table>
 				<tr>
 					<td><input type="text" name="username"
@@ -25,7 +25,7 @@
 						placeholder="Retype Password..."></td>
 				</tr>
 				<tr>
-					<td><button>Register</button></td>
+					<td><button type="submit" name="action" value="register">Register</button></td>
 				</tr>
 			</table>
 		</form>

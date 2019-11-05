@@ -8,5 +8,7 @@
 </head>
 <body>
 Unsuccessful login attempt.
+<a href="login.jsp">Try again</a> or <a href="register.jsp">register</a>
+if you dont have an account
 </body>
 </html>

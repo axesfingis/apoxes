@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello axesfingis, welcome to the members page!
+Hello, welcome to the members page!
 </body>
 </html>
